@@ -100,33 +100,30 @@ def main():
                 st.text(f"Timestamp: {row[2]}")
                 st.markdown("---")
 
-    elif choice == "About":
-        st.write("The goal of this project is to create a chatbot that can understand and respond to user input based on intents. The chatbot is built using Natural Language Processing (NLP) library and Logistic Regression, to extract the intents and entities from user input. The chatbot is built using Streamlit, a Python library for building interactive web applications.")
+  elif choice == "About":
+    st.write("""
+    The goal of this project is to create a chatbot that can understand and respond to user input in the context of a hospital setting. The chatbot uses Natural Language Processing (NLP) techniques, particularly Logistic Regression, to classify intents and extract entities from user input. The chatbot is built using **Streamlit**, a Python library for building interactive web applications.
 
-        st.subheader("Project Overview:")
+    ### Project Overview:
+    The project is divided into two main parts:
+    1. **NLP Techniques and Logistic Regression**: The chatbot is trained on a labeled dataset consisting of various intents (such as greeting, appointment inquiries, etc.) and entities (such as patient names, appointment dates).
+    2. **Streamlit Chatbot Interface**: Streamlit is used to build the web-based interface that allows users (patients and hospital staff) to interact with the chatbot. The interface accepts text input from the user and displays the chatbot's responses.
 
-        st.write("""
-        The project is divided into two parts:
-        1. NLP techniques and Logistic Regression algorithm is used to train the chatbot on labeled intents and entities.
-        2. For building the Chatbot interface, Streamlit web framework is used to build a web-based chatbot interface. The interface allows users to input text and receive responses from the chatbot.
-        """)
+    ### Dataset:
+    The dataset used in this project is a collection of labeled intents and entities, which is stored in a list format. Each entry in the dataset includes:
+    - **Intents**: The user’s intent (e.g., "greeting", "appointment", "query doctor availability").
+    - **Entities**: Information extracted from the input, such as names, dates, and medical-related queries.
+    - **Text**: Example user inputs corresponding to different intents and entities.
 
-        st.subheader("Dataset:")
+    ### Streamlit Chatbot Interface:
+    The chatbot interface is designed using Streamlit. It includes:
+    - **Text Input Box**: Users can type their questions or queries.
+    - **Chat Window**: Displays the chatbot’s responses based on user input.
+    - The chatbot uses the trained NLP model to generate appropriate responses in real-time.
 
-        st.write("""
-        The dataset used in this project is a collection of labelled intents and entities. The data is stored in a list.
-        - Intents: The intent of the user input (e.g. "greeting", "budget", "about")
-        - Entities: The entities extracted from user input (e.g. "Hi", "How do I create a budget?", "What is your purpose?")
-        - Text: The user input text.
-        """)
-
-        st.subheader("Streamlit Chatbot Interface:")
-
-        st.write("The chatbot interface is built using Streamlit. The interface includes a text input box for users to input their text and a chat window to display the chatbot's responses. The interface uses the trained model to generate responses to user input.")
-
-        st.subheader("Conclusion:")
-
-        st.write("In this project, a chatbot is built that can understand and respond to user input based on intents. The chatbot was trained using NLP and Logistic Regression, and the interface was built using Streamlit. This project can be extended by adding more data, using more sophisticated NLP techniques, deep learning algorithms.")
+    ### Conclusion:
+    In this project, a chatbot was developed to assist patients and staff in hospitals by understanding and responding to medical-related queries. The chatbot was trained using NLP and Logistic Regression, with the interface built using Streamlit. This system could be extended by adding more intents, incorporating more sophisticated NLP models, and integrating it with hospital management systems for enhanced functionality.
+    """)
 
 if __name__ == '__main__':
     main()
