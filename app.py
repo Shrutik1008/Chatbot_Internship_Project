@@ -99,10 +99,8 @@ def main():
                 st.text(f"Chatbot: {row[1]}")
                 st.text(f"Timestamp: {row[2]}")
                 st.markdown("---")
-
-  elif choice == "About":
-    st.write("""
-    The goal of this project is to create a chatbot that can understand and respond to user input in the context of a hospital setting. The chatbot uses Natural Language Processing (NLP) techniques, particularly Logistic Regression, to classify intents and extract entities from user input. The chatbot is built using **Streamlit**, a Python library for building interactive web applications.
+ elif choice == "About":
+     st.write("""The goal of this project is to create a chatbot that can understand and respond to user input in the context of a hospital setting. The chatbot uses Natural Language Processing (NLP) techniques, particularly Logistic Regression, to classify intents and extract entities from user input. The chatbot is built using **Streamlit**, a Python library for building interactive web applications.
 
     ### Project Overview:
     The project is divided into two main parts:
