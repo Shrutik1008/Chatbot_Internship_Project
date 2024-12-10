@@ -112,6 +112,7 @@ def main():
         """)
         
         st.subheader("Dataset:")
+        
         st.write(""" The dataset used in this project is a collection of labeled intents and entities, which is stored in a list format. Each entry in the dataset includes:
         - **Intents**: The user’s intent (e.g., "greeting", "appointment", "query doctor availability").
         - **Entities**: Information extracted from the input, such as names, dates, and medical-related queries.
